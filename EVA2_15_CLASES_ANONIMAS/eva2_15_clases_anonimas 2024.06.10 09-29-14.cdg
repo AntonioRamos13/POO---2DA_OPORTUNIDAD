@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="eva2_15_clases_anonimas">
+  <ClassDiagramComponents>
+    <Class name="EVA2_15_CLASES_ANONIMAS" package="eva2_15_clases_anonimas" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="ClaseAbstracta" package="eva2_15_clases_anonimas" visibility="public" isAbstract="true" xPosition="201.0" yPosition="234.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="mensaje" returnType="void" visibility="public" isAbstract="true"/>
+        <Method name="otroMensaje" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Interface name="Prueba" package="eva2_15_clases_anonimas" visibility="public" xPosition="320.0" yPosition="20.0">
+      <Methods>
+        <Method name="mostrarMensaje" returnType="void" visibility="public"/>
+      </Methods>
+    </Interface>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations/>
+</ClassDiagram>
