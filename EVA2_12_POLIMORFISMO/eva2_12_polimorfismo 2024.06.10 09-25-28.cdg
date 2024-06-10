@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="eva2_12_polimorfismo">
+  <ClassDiagramComponents>
+    <Class name="EVA2_12_POLIMORFISMO" package="eva2_12_polimorfismo" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Persona" package="eva2_12_polimorfismo" visibility="public" xPosition="320.0" yPosition="20.0">
+      <Fields>
+        <Field name="nombre" type="String" visibility="private"/>
+        <Field name="apellidos" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="nombre"/>
+          <Argument type="String" name="apellidos"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getNombre" returnType="String" visibility="public"/>
+        <Method name="setNombre" returnType="void" visibility="public">
+          <Argument type="String" name="nombre"/>
+        </Method>
+        <Method name="getApellidos" returnType="String" visibility="public"/>
+        <Method name="setApellidos" returnType="void" visibility="public">
+          <Argument type="String" name="apellidos"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Estudiante" package="eva2_12_polimorfismo" visibility="public" xPosition="269.0" yPosition="385.0">
+      <Fields>
+        <Field name="noControl" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="noControl"/>
+          <Argument type="String" name="nombre"/>
+          <Argument type="String" name="apellidos"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getNoControl" returnType="String" visibility="public"/>
+        <Method name="setNoControl" returnType="void" visibility="public">
+          <Argument type="String" name="noControl"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="eva2_12_polimorfismo.Estudiante" target="eva2_12_polimorfismo.Persona"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
