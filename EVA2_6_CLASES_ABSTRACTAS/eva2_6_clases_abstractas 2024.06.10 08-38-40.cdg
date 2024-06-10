@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="eva2_6_clases_abstractas">
+  <ClassDiagramComponents>
+    <Class name="Circulo" package="eva2_6_clases_abstractas" visibility="public" xPosition="41.0" yPosition="36.0">
+      <Fields>
+        <Field name="r" type="double" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="double" name="r"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getR" returnType="double" visibility="public"/>
+        <Method name="setR" returnType="void" visibility="public">
+          <Argument type="double" name="r"/>
+        </Method>
+        <Method name="calcularArea" returnType="double" visibility="public"/>
+        <Method name="calcularPeri" returnType="double" visibility="public"/>
+        <Method name="imprimirDatos" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="EVA2_6_CLASES_ABSTRACTAS" package="eva2_6_clases_abstractas" visibility="public" xPosition="320.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Figuras" package="eva2_6_clases_abstractas" visibility="public" isAbstract="true" xPosition="352.0" yPosition="155.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="calcularArea" returnType="double" visibility="public" isAbstract="true"/>
+        <Method name="calcularPeri" returnType="double" visibility="public" isAbstract="true"/>
+        <Method name="imprimirDatos" returnType="void" visibility="public" isAbstract="true"/>
+      </Methods>
+    </Class>
+    <Class name="Rectangulo" package="eva2_6_clases_abstractas" visibility="public" xPosition="618.0" yPosition="20.0">
+      <Fields>
+        <Field name="b" type="double" visibility="private"/>
+        <Field name="h" type="double" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="double" name="b"/>
+          <Argument type="double" name="h"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getB" returnType="double" visibility="public"/>
+        <Method name="setB" returnType="void" visibility="public">
+          <Argument type="double" name="b"/>
+        </Method>
+        <Method name="getH" returnType="double" visibility="public"/>
+        <Method name="setH" returnType="void" visibility="public">
+          <Argument type="double" name="h"/>
+        </Method>
+        <Method name="calcularArea" returnType="double" visibility="public"/>
+        <Method name="calcularPeri" returnType="double" visibility="public"/>
+        <Method name="imprimirDatos" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Triangulo" package="eva2_6_clases_abstractas" visibility="public" xPosition="338.0" yPosition="356.0">
+      <Fields>
+        <Field name="b" type="double" visibility="private"/>
+        <Field name="h" type="double" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="double" name="b"/>
+          <Argument type="double" name="h"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getB" returnType="double" visibility="public"/>
+        <Method name="setB" returnType="void" visibility="public">
+          <Argument type="double" name="b"/>
+        </Method>
+        <Method name="getH" returnType="double" visibility="public"/>
+        <Method name="setH" returnType="void" visibility="public">
+          <Argument type="double" name="h"/>
+        </Method>
+        <Method name="calcularArea" returnType="double" visibility="public"/>
+        <Method name="calcularPeri" returnType="double" visibility="public"/>
+        <Method name="calcularHipo" returnType="double" visibility="private"/>
+        <Method name="imprimirDatos" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="eva2_6_clases_abstractas.Rectangulo" target="eva2_6_clases_abstractas.Figuras"/>
+    <IsRelation name="is" source="eva2_6_clases_abstractas.Circulo" target="eva2_6_clases_abstractas.Figuras"/>
+    <IsRelation name="is" source="eva2_6_clases_abstractas.Triangulo" target="eva2_6_clases_abstractas.Figuras"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
